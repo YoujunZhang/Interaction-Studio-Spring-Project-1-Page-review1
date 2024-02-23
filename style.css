@@ -1,0 +1,185 @@
+/* .space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 400;
+  } */
+p{
+  text-align: justify;
+  display: inline;
+}
+p:hover {
+  text-shadow:1px 0px 2px gold; 
+  /* color: blanchedalmond; */
+  /* transition-delay: 12s; */
+}
+
+
+  
+
+  div {
+    position:fixed;
+    font-size: 15px;
+    padding: 40px;
+    margin: 30px;
+    text-align: justify;
+    letter-spacing: 14px;
+    margin-top: 125px;
+  }
+
+
+  body{
+    /* background-color: rgb(13, 13, 156); */
+    height: 4000px; /* Used to enable scrolling */
+    background-image: linear-gradient(rgb(46, 46, 255),rgb(4, 4, 97))
+    /* linear-gradient(55deg, rgb(7, 7, 116) 0%, #1815cd 51%, rgb(34, 58, 145) 85%); */
+
+    
+  }
+
+
+  
+
+  #blur{
+    font-size: 15px;
+    color: transparent;
+    text-shadow: 0 0 3px rgb(202, 177, 35);
+    font-weight: 100; 
+            opacity: 1; 
+            animation: animate 3s ease-out forwards; 
+            animation-delay: 1s; 
+  }
+
+
+
+  span {
+    /* display: block; */
+    color: blanchedalmond;
+    /* text-decoration:line-through; */
+    text-shadow: 0 0 8px #fff;
+    animation-name: cross-fade-blur;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        animation-delay: $i * 0.04s;
+      }
+    }
+  }
+
+
+
+  @keyframes test {
+    from {
+      opacity: 0;
+      visibility: hidden;
+      filter: blur(0.2ex);
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+      filter: blur(0ex);
+    }
+  }
+  
+  
+  body #one {
+    animation: test 13s linear;
+  }
+  
+  body #two {
+    animation: test 12s linear;
+  }
+  
+  body #three {
+    animation: test 11s linear;
+  }
+  
+  body #four {
+    animation: test 12s linear;
+  }
+  
+  body #five {
+    animation: test 12s linear;
+  }
+
+  body #six {
+      animation: test 11s linear;
+    }
+    
+  body #seven {
+      animation: test 12s linear;
+    }
+    
+  body #eight {
+      animation: test 12s linear;
+  }
+
+
+  @keyframes animate { 
+    0% { 
+        letter-spacing: 0px; 
+    } 
+
+    20% { 
+        letter-spacing: 10px; 
+    } 
+
+    100% { 
+        letter-spacing: 2px; 
+    } 
+} 
+  
+
+
+
+
+/* nav,
+.scroll-container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+nav {
+  width: 339px;
+  padding: 5px;
+  border: 1px solid black;
+}
+.scroll-container {
+  width: 350px;
+  height: 200px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 5em;
+} */
+
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  /* text-decoration: underline; */
+  display: flex;
+  margin-left: 630px;
+  font-size: 15px;
+  cursor: pointer;
+  width: 60%;
+  height: 10px;
+  border-radius: 25px;
+  letter-spacing: 36px;
+
+}
+
+button:hover{
+  text-shadow:1px 0px 2px gold; 
+  filter: blur(2px);
+  font-size: 23px;
+}
